@@ -1,0 +1,256 @@
+
+/* Basic cell styling */
+.cell{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	font-size:2.5rem;
+	font-weight:700;
+	color:#ffffff;
+}
+
+.cell.win{
+	background-image: linear-gradient(90deg, #f59e0b, #f97316);
+	color:#000;
+}
+
+.cell.disabled{
+	pointer-events: none;
+	opacity: 0.9;
+}
+
+.cell img{
+	width:60%;
+	height:60%;
+	object-fit:contain;
+	pointer-events: none;
+}
+
+
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1A2A33;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #A8BFC9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* LOGO */
+.logo {
+  margin-top: 100px;
+}
+
+/* PICK CARD */
+.form {
+  width: 480px;
+  background: #1F3641;
+  border-radius: 16px;
+  padding: 24px;
+  margin-top: 32px;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.pick-options {
+  margin-top: 24px;
+  background: #1A2A33;
+  border-radius: 16px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.label input {
+  display: none;
+}
+
+.pick-box {
+  width: 200px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.label input:checked + .pick-box {
+  background: #1F3641;
+}
+
+.note {
+  font-size: 14px;
+  margin-top: 16px;
+  text-align: center;
+}
+
+/* BUTTONS */
+.start-buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.btn {
+  border-radius: 16px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+
+}
+
+.btn-yellow {
+  padding: 18px;
+  background: #F2B137;
+  color: #1A2A33;
+}
+
+.btn-blue {
+  padding: 18px;
+  background: #31C3BD;
+  color: #1A2A33;
+}
+
+.btn-gray {
+  background: #A8BFC9;
+  color: #1A2A33;
+}
+
+.start-button{
+	width: 480px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.modal-btn{
+	padding: 18px;
+}
+
+.btn:hover {
+	opacity: 0.8; 
+}
+.btn:active { 
+	opacity: 0.5; 
+}
+
+/* GAME HEADER */
+.header {
+  width: 480px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.turn {
+  background: #1F3641;
+  padding: 12px 20px;
+  border-radius: 8px;
+}
+
+.restart-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* BOARD */
+.board {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 140px);
+  gap: 24px;
+}
+
+.cell {
+  width: 140px;
+  height: 140px;
+  background: #1F3641;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* SCORE */
+.score-board {
+  width: 480px;
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.score {
+  font-size: 14px;
+  width: 140px;
+  height: 72px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.score-value{
+	font-size: 24px;
+}
+
+.score-x { 
+	background: #31C3BD; 
+	color: #1A2A33; 
+}
+.score-ties { 
+	background: #A8BFC9; 
+	color: #1A2A33; 
+}
+.score-o { 
+	background: #F2B137; 
+	color: #1A2A33; 
+}
+
+/* MODAL */
+.modal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 250px;
+  background: #1F3641;
+  padding: 24px;
+  text-align: center;
+}
+
+.modal-buttons {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  gap: 16px;
+}
+
+.whoWon{
+	margin-top: 10px;
+}
+.winner-text{
+	margin-top: 16px;
+	font-size: 40px;
+	letter-spacing: 2px;
+}
+
+.hidden {
+  display: none;
+}

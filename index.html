@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <div class="logo">
+    <img src="/images/xo-logo.svg" alt="Logo">
+  </div>
+
+  <form id="form" class="form">
+    <h2 class="title">PICK PLAYER'S MARK</h2>
+
+    <div class="pick-options">
+      <label class="label">
+        <input type="radio" name="symbol" value="X" checked>
+        <div class="pick-box">
+          <img width="40px" src="/images/X-initial.svg" alt="X">
+        </div>
+      </label>
+
+      <label class="label">
+        <input type="radio" name="symbol" value="O">
+        <div class="pick-box">
+          <img width="40px" src="/images/O-initial.svg" alt="O">
+        </div>
+      </label>
+    </div>
+
+    <p class="note">REMEMBER : X GOES FIRST</p>
+  </form>
+
+  <div class="start-buttons">
+    <button id="startCPU" class="btn start-button btn-yellow">
+      NEW GAME (VS CPU)
+    </button>
+    <button id="startPlayer" class="btn start-button btn-blue">
+      NEW GAME (VS PLAYER)
+    </button>
+  </div>
+
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
